@@ -1,6 +1,7 @@
 <script setup>
 import {router} from "@inertiajs/vue3";
 import {route} from "ziggy-js";
+import { Link } from '@inertiajs/vue3'
 
 const logout = () => {
     router.post(route('logout'));
@@ -9,9 +10,7 @@ const logout = () => {
 
 <template>
     <h1 class="text-2xl font-bold">Dashboard</h1>
-    <a :href="logout" class="text-white bg-red-500 px-4 py-2 rounded-lg">
-        Logout
-    </a>
+    <Link href="/logout" method="get" as="button" type="button">Logout</Link>
 </template>
 
 

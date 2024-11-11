@@ -43,4 +43,9 @@ Pour installer et exécuter ce projet localement, suivez les étapes ci-dessous.
    php artisan serve
    npm run dev
    ```
-   
+
+## Technologies utilisées
+
+Backend : Laravel 9
+Frontend : Inertia.js, Vue 3
+Authentification sociale : Laravel Socialite
